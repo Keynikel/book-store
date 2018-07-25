@@ -1,7 +1,7 @@
 svg4everybody(); // иницализация полифила для IE
 
 $(document).ready(function(){
-  $('.slider__wrapper').slick();
+  // весь ваш код c jQuery
 });
 
 // Если на проекте нет jQuery, но хочется $( document ).ready... (IE9+)
