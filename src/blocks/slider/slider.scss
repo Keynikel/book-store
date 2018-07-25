@@ -5,4 +5,44 @@
 .slider {
 
   $block-name:                &; // #{$block-name}__element
+
+  min-height: 490px;
+  padding: 100px 6px 40px;
+  background-color: $background;
+
+  &__wrapper {
+    padding: 43px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    border: 7px solid $border;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 55px;
+    padding: 0;
+    font-size: $font-size--h1;
+    line-height: 1.25;
+    font-weight: 600;
+    order: 2;
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    order: 1;
+    margin-top: -119px;
+    margin-bottom: 68px;
+    font-size: $font-size;
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  &__link {
+    margin: 0;
+    padding: 0;
+    order: 3;
+    color: $link;
+    font-size: $font-size--md;
+  }
 }
