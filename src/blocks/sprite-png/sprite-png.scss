@@ -10,38 +10,38 @@
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
 $chrome-name: 'chrome';
-$chrome-x: 0px;
-$chrome-y: 0px;
-$chrome-offset-x: 0px;
-$chrome-offset-y: 0px;
+$chrome-x: 0;
+$chrome-y: 0;
+$chrome-offset-x: 0;
+$chrome-offset-y: 0;
 $chrome-width: 64px;
 $chrome-height: 64px;
 $chrome-total-width: 132px;
 $chrome-total-height: 132px;
 $chrome-image: '../img/sprite-02665121933568415.png';
-$chrome: (0px, 0px, 0px, 0px, 64px, 64px, 132px, 132px, '../img/sprite-02665121933568415.png', 'chrome', );
+$chrome: (0, 0, 0, 0, 64px, 64px, 132px, 132px, '../img/sprite-02665121933568415.png', 'chrome', );
 $github-logo-name: 'github-logo';
 $github-logo-x: 68px;
-$github-logo-y: 0px;
+$github-logo-y: 0;
 $github-logo-offset-x: -68px;
-$github-logo-offset-y: 0px;
+$github-logo-offset-y: 0;
 $github-logo-width: 64px;
 $github-logo-height: 64px;
 $github-logo-total-width: 132px;
 $github-logo-total-height: 132px;
 $github-logo-image: '../img/sprite-02665121933568415.png';
-$github-logo: (68px, 0px, -68px, 0px, 64px, 64px, 132px, 132px, '../img/sprite-02665121933568415.png', 'github-logo', );
+$github-logo: (68px, 0, -68px, 0, 64px, 64px, 132px, 132px, '../img/sprite-02665121933568415.png', 'github-logo', );
 $placeholder-name: 'placeholder';
-$placeholder-x: 0px;
+$placeholder-x: 0;
 $placeholder-y: 68px;
-$placeholder-offset-x: 0px;
+$placeholder-offset-x: 0;
 $placeholder-offset-y: -68px;
 $placeholder-width: 64px;
 $placeholder-height: 64px;
 $placeholder-total-width: 132px;
 $placeholder-total-height: 132px;
 $placeholder-image: '../img/sprite-02665121933568415.png';
-$placeholder: (0px, 68px, 0px, -68px, 64px, 64px, 132px, 132px, '../img/sprite-02665121933568415.png', 'placeholder', );
+$placeholder: (0, 68px, 0, -68px, 64px, 64px, 132px, 132px, '../img/sprite-02665121933568415.png', 'placeholder', );
 $spritesheet-width: 132px;
 $spritesheet-height: 132px;
 $spritesheet-image: '../img/sprite-02665121933568415.png';
@@ -102,11 +102,11 @@ $spritesheet: (132px, 132px, '../img/sprite-02665121933568415.png', $spritesheet
 //   but can be overridden inside of SCSS
 //
 // @include sprites($spritesheet-sprites);
-@mixin sprites($sprites) {
-  @each $sprite in $sprites {
-    $sprite-name: nth($sprite, 10);
-    .#{$sprite-name} {
-      @include sprite($sprite);
-    }
-  }
-}
+// @mixin sprites($sprites) {
+//   @each $sprite in $sprites {
+//     $sprite-name: nth($sprite, 10);
+//     .#{$sprite-name} {
+//       @include sprite($sprite);
+//     }
+// }
+// }

@@ -17,7 +17,7 @@
     margin-bottom: 30px;
     padding: 0;
     font-size: $font-size--h1;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1.25;
   }
 
@@ -27,7 +27,7 @@
     padding-bottom: 18px;
     font-size: $font-size--lg;
     line-height: 1.875;
-    font-weight: normal;
+    font-weight: 500;
     font-style: italic;
   }
 
@@ -36,7 +36,7 @@
     padding-right: 20px;
     font-size: $font-size--md;
     line-height: 1.875;
-    font-weight: bold;
+    font-weight: 600;
 
     &::after {
       content: '';
@@ -44,12 +44,11 @@
       width: 15px;
       height: 15px;
       top: 4px;
-      right: 0px;
+      right: 0;
       background-image: url(../img/rub.svg);
       background-position: top center;
       background-size: contain;
       background-repeat: no-repeat;
     }
   }
-
 }

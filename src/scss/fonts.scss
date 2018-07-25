@@ -2,25 +2,25 @@
 // Не пишите тут ничего, кроме @font-face
 
 @font-face {
-  font-family: "Monserrat";
-  src: url("../fonts/Monserrat-Medium.ttf") format("ttf");
-  font-weight: normal;
+  font-family: Monserrat;
+  src: url('../fonts/Monserrat-Medium.ttf') format('ttf');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Monserrat";
-  src: url("../fonts/Monserrat-Bold.ttf") format("ttf");
-  font-weight: bold;
+  font-family: Monserrat;
+  src: url('../fonts/Monserrat-Bold.ttf') format('ttf');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Monserrat";
-  src: url("../fonts/Monserrat-Italic.ttf") format("ttf");
-  font-weight: normal;
+  font-family: Monserrat;
+  src: url('../fonts/Monserrat-Italic.ttf') format('ttf');
+  font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
