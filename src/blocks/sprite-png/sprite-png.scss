@@ -18,8 +18,8 @@ $chrome-width: 64px;
 $chrome-height: 64px;
 $chrome-total-width: 132px;
 $chrome-total-height: 132px;
-$chrome-image: '../img/sprite-02665121933568415.png';
-$chrome: (0, 0, 0, 0, 64px, 64px, 132px, 132px, '../img/sprite-02665121933568415.png', 'chrome', );
+$chrome-image: '../img/sprite-01514555970918876.png';
+$chrome: (0, 0, 0, 0, 64px, 64px, 132px, 132px, '../img/sprite-01514555970918876.png', 'chrome', );
 $github-logo-name: 'github-logo';
 $github-logo-x: 68px;
 $github-logo-y: 0;
@@ -29,8 +29,8 @@ $github-logo-width: 64px;
 $github-logo-height: 64px;
 $github-logo-total-width: 132px;
 $github-logo-total-height: 132px;
-$github-logo-image: '../img/sprite-02665121933568415.png';
-$github-logo: (68px, 0, -68px, 0, 64px, 64px, 132px, 132px, '../img/sprite-02665121933568415.png', 'github-logo', );
+$github-logo-image: '../img/sprite-01514555970918876.png';
+$github-logo: (68px, 0, -68px, 0, 64px, 64px, 132px, 132px, '../img/sprite-01514555970918876.png', 'github-logo', );
 $placeholder-name: 'placeholder';
 $placeholder-x: 0;
 $placeholder-y: 68px;
@@ -40,13 +40,13 @@ $placeholder-width: 64px;
 $placeholder-height: 64px;
 $placeholder-total-width: 132px;
 $placeholder-total-height: 132px;
-$placeholder-image: '../img/sprite-02665121933568415.png';
-$placeholder: (0, 68px, 0, -68px, 64px, 64px, 132px, 132px, '../img/sprite-02665121933568415.png', 'placeholder', );
+$placeholder-image: '../img/sprite-01514555970918876.png';
+$placeholder: (0, 68px, 0, -68px, 64px, 64px, 132px, 132px, '../img/sprite-01514555970918876.png', 'placeholder', );
 $spritesheet-width: 132px;
 $spritesheet-height: 132px;
-$spritesheet-image: '../img/sprite-02665121933568415.png';
+$spritesheet-image: '../img/sprite-01514555970918876.png';
 $spritesheet-sprites: ($chrome, $github-logo, $placeholder, );
-$spritesheet: (132px, 132px, '../img/sprite-02665121933568415.png', $spritesheet-sprites, );
+$spritesheet: (132px, 132px, '../img/sprite-01514555970918876.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //
@@ -97,16 +97,3 @@ $spritesheet: (132px, 132px, '../img/sprite-02665121933568415.png', $spritesheet
   @include sprite-width($sprite);
   @include sprite-height($sprite);
 }
-
-// The `sprites` mixin generates identical output to the CSS template
-//   but can be overridden inside of SCSS
-//
-// @include sprites($spritesheet-sprites);
-// @mixin sprites($sprites) {
-//   @each $sprite in $sprites {
-//     $sprite-name: nth($sprite, 10);
-//     .#{$sprite-name} {
-//       @include sprite($sprite);
-//     }
-// }
-// }
