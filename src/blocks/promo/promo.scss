@@ -3,6 +3,7 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .promo {
+  padding-bottom: 65px;
   background-color: $background;
   $block-name:                &; // #{$block-name}__element
 
@@ -56,6 +57,10 @@
 
   &__card {
     margin-bottom: 50px;
+
+    &--mobile-hidden {
+      display: none;
+    }
   }
 
   &__pagination {

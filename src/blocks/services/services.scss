@@ -3,6 +3,113 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .services {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: $background;
 
   $block-name:                &; // #{$block-name}__element
+
+  &__wrapper {
+    position: relative;
+    border: 7px solid $border;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 53px;
+      width: 150px;
+      height: 20px;
+      background-color: $background;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      right: 53px;
+      width: 150px;
+      height: 20px;
+      background-color: $background;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 36px;
+    margin-left: 15px;
+    margin-right: 20px;
+    font-size: $font-size--xlg;
+    line-height: 1.45;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    margin-left: 13px;
+    font-weight: 400;
+  }
+
+  &__items {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    position: relative;
+    width: 250px;
+    padding-top: 90px;
+    line-height: 1.75;
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: 50%;
+      margin-left: -25px;
+      width: 55px;
+      height: 55px;
+      background-color: #fff;
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+
+    &--types::before {
+      background-image: url('../img/icon_book.svg');
+      background-size: 53px 41px;
+    }
+
+    &--delivery::before {
+      background-image: url(../img/icon_delivery.svg);
+      background-size: 70px 37px;
+      width: 70px;
+      top: 39px;
+      left: 50%;
+      margin-left: -34px;
+    }
+
+    &--gift::before {
+      background-image: url(../img/icon_box.svg);
+      background-size: 70px 42px;
+      width: 70px;
+      top: 39px;
+      left: 50%;
+      margin-left: -34px;
+    }
+
+    &--sities::before {
+      background-image: url(../img/icon_map.svg);
+      background-size: 70px 47px;
+      width: 70px;
+      top: 31px;
+      left: 50%;
+      margin-left: -36px;
+    }
+  }
 }
