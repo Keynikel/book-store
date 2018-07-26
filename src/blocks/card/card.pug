@@ -1,5 +1,5 @@
-mixin card(src, title, subtitle, price)
-  article.card
+mixin card(src, title, subtitle, price, additional)
+  article.card(class=additional)
     img.card__cover(src='img/'+src+'.png' alt=title width='220' height='314')
     h1.card__title
       =title

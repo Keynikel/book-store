@@ -51,4 +51,28 @@
       background-repeat: no-repeat;
     }
   }
+
+  &--new-book {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+
+  // TODO: Эта вложенность не работает. Возможно не пригодится, потому что будут стили слайдера
+    &__cover{
+      min-width: 260px;
+      min-height: 370px;
+      margin-bottom: 27px;
+      margin-top: -112px;
+    }
+
+    &__title {
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+      max-width: 255px;
+      line-height: 1.6;
+    }
+  }
 }
