@@ -3,7 +3,8 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .promo {
-
+  padding-bottom: 65px;
+  background-color: $background;
   $block-name:                &; // #{$block-name}__element
 
   &__navigation {
@@ -52,19 +53,45 @@
     padding-left: 50px;
     padding-right: 50px;
     list-style: none;
-    background-color: $background;
   }
 
   &__card {
     margin-bottom: 50px;
+
+    &--mobile-hidden {
+      display: none;
+    }
   }
 
   &__pagination {
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
+    max-width: 220px;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__page {
+
+    a {
+      font-weight: 600;
+      color: $text-color;
+      text-decoration: none;
+    }
+
+    a.active {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: rgb(244, 212, 228);
+      color: $third-color;
+
+      text-align: center;
+    }
   }
 }
