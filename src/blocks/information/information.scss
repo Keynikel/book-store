@@ -11,6 +11,10 @@
   padding: 40px 0 38px;
   color: #fff;
 
+  @media (min-width: $screen-sm) {
+    padding-top: 40px;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   &__title {
