@@ -50,6 +50,8 @@ body {
   font-size: $font-size;
   line-height: $line-height;
   color: $text-color;
+
+  max-width: 840px;
 }
 
 [tabindex='-1']:focus {

@@ -6,13 +6,15 @@
   background-color: $third-color;
   background-image: url('../img/bg-info.png');
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 40px 0 38px;
   color: #fff;
 
   @media (min-width: $screen-sm) {
-    padding-top: 40px;
+    padding-top: 70px;
+    padding-bottom: 67px;
+    background-image: url('../img/bg-info--md.png');
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -27,6 +29,13 @@
     margin-bottom: 15px;
     font-size: $font-size--h1;
     line-height: 1.8;
+
+    @media (min-width: $screen-sm) {
+      padding-top: 40px;
+      font-size: 36px;
+      line-height: 1.2;
+      text-align: center;
+    }
 
     &::before {
       content: '';

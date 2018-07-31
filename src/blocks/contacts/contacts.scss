@@ -65,5 +65,13 @@
   &__map {
     min-height: 340px;
     margin-left: -30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/map.png');
+
+    @media (min-width: $screen-sm) {
+      background-image: url('../img/map--md.png');
+    }
   }
 }
