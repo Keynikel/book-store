@@ -3,6 +3,183 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .feedback {
+  padding-top: 40px;
+  padding-bottom: 51px;
+  background-color: $background;
+
+  @media (min-width: $screen-sm) {
+    padding-top: 60px;
+    padding-bottom: 24px;
+  }
 
   $block-name:                &; // #{$block-name}__element
+
+  &__wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 340px;
+    border: 7px solid $border;
+
+    @media (min-width: $screen-sm) {
+      max-width: 760px;
+      margin-bottom: 37px;
+    }
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -7px;
+      left: 53px;
+      width: 102px;
+      height: 7px;
+      background-color: $background;
+
+      @media (min-width: $screen-sm) {
+        width: 400px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -7px;
+      right: 53px;
+      width: 102px;
+      height: 7px;
+      background-color: $background;
+
+      @media (min-width: $screen-sm) {
+        width: 280px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 51px;
+    margin-left: 12px;
+    font-size: $font-size--xlg;
+    line-height: 1.45;
+    font-weight: 700;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 49px;
+      margin-left: 17px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    padding-left: 14px;
+    padding-right: 25px;
+    padding-top: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    @media (min-width: $screen-sm) {
+      padding-left: 19px;
+      padding-top: 10px;
+    }
+  }
+
+  &__field {
+    margin: 0;
+
+    @media (min-width: $screen-sm) {
+      width: 100%;
+    }
+
+    &--half {
+
+      @media (min-width: $screen-sm) {
+        width: 50%;
+      }
+    }
+  }
+
+  &__form {
+    padding-bottom: 83px;
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 53px;
+    }
+  }
+
+  &__email,
+  &__message {
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 4%;
+    margin-bottom: 10px;
+    margin-right: 4%;
+    width: 92%;
+    border: none;
+    border-bottom: 4px solid $inpit-border;
+    background-color: transparent;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (min-width: $screen-sm) {
+      width: 89%;
+      margin-top: 36px;
+      margin-left: 20px;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    margin-left: 4%;
+    margin-top: 35px;
+    margin-bottom: 37px;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 1.6;
+
+    @media (min-width: $screen-sm) {
+      max-width: 415px;
+      margin-left: 2%;
+      margin-top: 23px;
+      margin-bottom: 41px;
+      padding-left: 28px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 4px solid $inpit-border;
+    }
+  }
+
+  &__agree {
+    color: $link;
+    text-decoration: none;
+  }
+
+  &__submit {
+    display: block;
+    min-width: 300px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    font-size: $font-size--md;
+    color: #fff;
+
+    @media (min-width: $screen-sm) {
+      margin-left: 18px;
+      min-width: 333px;
+      font-size: 17px;
+    }
+  }
 }

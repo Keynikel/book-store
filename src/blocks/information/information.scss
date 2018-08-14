@@ -3,6 +3,60 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .information {
+  background-color: $third-color;
+  background-image: url('../img/bg-info.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 0 38px;
+  color: #fff;
+
+  @media (min-width: $screen-sm) {
+    padding-top: 70px;
+    padding-bottom: 67px;
+    background-image: url('../img/bg-info--md.png');
+  }
 
   $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 15px;
+    font-size: $font-size--h1;
+    line-height: 1.8;
+
+    @media (min-width: $screen-sm) {
+      padding-top: 40px;
+      font-size: 36px;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    &::before {
+      content: '';
+      width: 100px;
+      height: 17px;
+      position: absolute;
+      top: -3px;
+      left: 50%;
+      margin-left: -51px;
+      background-image: url('../img/wave.svg');
+      background-position: top center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2;
+  }
 }
